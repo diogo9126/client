@@ -1,7 +1,7 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
+import CalendarMonth from '@mui/icons-material/CalendarMonth';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -39,9 +39,9 @@ export default function Album() {
             <CssBaseline />
             <AppBar position="relative">
                 <Toolbar>
-                    <CameraIcon sx={{ mr: 2 }} />
+                    <CalendarMonth sx={{ mr: 2 }} />
                     <Typography variant="h6" color="inherit" noWrap>
-                        Album layout
+                        Página de Eventos 
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -62,12 +62,11 @@ export default function Album() {
                             color="text.primary"
                             gutterBottom
                         >
-                            Album layout
+                            Esquema de Eventos
                         </Typography>
                         <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                            Something short and leading about the collection below—its contents,
-                            the creator, etc. Make it short and sweet, but not too short so folks
-                            don&apos;t simply skip over it entirely.
+                            Fique por dentro das atividades acadêmicos liberadas para seu curso e não deixe
+                            para ultima hora.
                         </Typography>
                         <Stack
                             sx={{ pt: 4 }}
@@ -75,8 +74,8 @@ export default function Album() {
                             spacing={2}
                             justifyContent="center"
                         >
-                            <Button variant="contained">Main call to action</Button>
-                            <Button variant="outlined">Secondary action</Button>
+                            <Button variant="contained">Inscrever em eventos</Button>
+                            <Button variant="outlined">Atividades Abertas</Button>
                         </Stack>
                     </Container>
                 </Box>
@@ -99,16 +98,16 @@ export default function Album() {
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            Heading
+                                            Evento academico aberto
                                         </Typography>
                                         <Typography>
-                                            This is a media card. You can use this section to describe the
-                                            content.
+                                            Participe desse evento academico e ganhe 15 horas complementares
+                                            Click em visualizar para saber mais detalhes.
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small">View</Button>
-                                        <Button size="small">Edit</Button>
+                                        <Button size="small">Visualizar</Button>
+                                        <Button size="small">Me inscrever</Button>
                                     </CardActions>
                                 </Card>
                             </Grid>
